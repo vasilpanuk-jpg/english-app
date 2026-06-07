@@ -1,0 +1,14 @@
+.vocabulary {
+  padding: 1.5rem;
+  background: linear-gradient(180deg, #fffef7 0%, #f7fff6 100%);
+  min-height: 100vh;
+}
+
+.title {
+  margin: 0 0 0.5rem;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  color: #1d2030;
+}
+
+

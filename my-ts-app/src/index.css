@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Gorditas:wght@400;700&display=swap');
+
+:root {
+	font-family: 'Gorditas', cursive;
+	color: #1d2030;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: inherit;
+}
+
+html,
+body,
+#root {
+	min-height: 100vh;
+}
+
+/* Apply full-viewport background on the html element to avoid top white gap */
+html {
+	background:
+		radial-gradient(circle at top left, rgba(255, 123, 85, 0.16), transparent 30%),
+		radial-gradient(circle at top right, rgba(255, 110, 157, 0.14), transparent 26%),
+		linear-gradient(180deg, #fffaf6 0%, #f6f8ff 100%);
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+body {
+	background: transparent;
+	color: #1d2030;
+	font-family: 'Gorditas', cursive;
+}
+
+button,
+input,
+textarea,
+select {
+	font: inherit;
+}
+
+

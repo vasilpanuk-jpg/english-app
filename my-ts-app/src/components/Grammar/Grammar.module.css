@@ -1,0 +1,182 @@
+.container {
+  display: flex;
+  gap: 1rem;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #fff7f3 0%, #fffaf6 100%);
+}
+
+.sidebar {
+  width: 300px;
+  padding: 1rem;
+  border-right: 1px solid rgba(29, 32, 48, 0.06);
+  background: linear-gradient(180deg, #fffdfa 0%, #fff8f4 100%);
+  overflow: auto;
+}
+
+.sideTitle {
+  margin: 0 0 0.75rem;
+  font-size: 1.125rem;
+  color: #1d2030;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.levelBlock {
+  margin-bottom: 0.5rem;
+}
+
+.levelHeader {
+  font-weight: 700;
+  color: #2b2f42;
+  margin-bottom: 0.4rem;
+}
+
+.levelToggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.45rem 0.6rem;
+  border-radius: 6px;
+  border: none;
+  background: transparent;
+  color: #2b2f42;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.chev {
+  opacity: 0.85;
+  font-size: 0.95rem;
+  display: inline-block;
+  transform-origin: center;
+  transition: transform 200ms ease;
+}
+
+.levelDesc {
+  margin: 0.4rem 0 0.6rem;
+  color: #525562;
+  font-size: 0.9rem;
+}
+
+.chevOpen {
+  transform: rotate(90deg);
+}
+
+.levelLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.levelEmoji {
+  font-size: 1.05rem;
+  line-height: 1;
+}
+
+.topicList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 220ms ease, opacity 180ms ease, transform 180ms ease;
+  opacity: 0;
+  transform: translateY(-6px);
+  will-change: max-height, opacity, transform;
+}
+
+.topicList.open {
+  max-height: 1000px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.topicButton {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0.45rem 0.6rem;
+  border-radius: 6px;
+  border: none;
+  background: transparent;
+  color: #3c3f50;
+  cursor: pointer;
+}
+
+.topicButton:hover {
+  background: rgba(60, 63, 80, 0.04);
+}
+
+.active {
+  background: linear-gradient(90deg, #fff1f0, #fff9ee);
+  box-shadow: inset 0 0 0 1px rgba(29,32,48,0.04);
+}
+
+.content {
+  flex: 1 1 auto;
+  padding: 1.5rem;
+}
+
+.title {
+  margin: 0 0 0.5rem;
+  font-size: 2rem;
+  color: #1d2030;
+}
+
+.lead {
+  margin: 0.5rem 0 1rem;
+  color: #5d6073;
+}
+
+.topicView {
+  margin-top: 1rem;
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(29, 32, 48, 0.04);
+}
+
+.topicTitle {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+  color: #1d2030;
+}
+
+.topicItems {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: #333645;
+}
+
+.empty {
+  color: #6b6f82;
+}
+
+.explanation {
+  color: #3c3f50;
+  margin: 0 0 1rem;
+}
+
+.subTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1d2030;
+  margin: 1.25rem 0 0.5rem;
+}
+
+.examplesList {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: #3c3f50;
+}
+
+.examplesList li {
+  margin-bottom: 0.35rem;
+}

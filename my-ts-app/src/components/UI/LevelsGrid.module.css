@@ -1,0 +1,16 @@
+.levelsSection {
+  padding: 1rem;
+}
+
+.sectionTitle {
+  margin: 0 0 1rem;
+  font-size: 1.35rem;
+  color: #1d2030;
+}
+
+.grid {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}

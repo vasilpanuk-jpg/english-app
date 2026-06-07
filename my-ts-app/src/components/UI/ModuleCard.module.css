@@ -1,0 +1,70 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 280px;
+  gap: 0.75rem;
+  padding: 1.1rem;
+  border: 2px solid rgba(29, 32, 48, 0.08);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 18px 40px rgba(28, 31, 49, 0.09);
+  backdrop-filter: blur(6px);
+  transform: rotate(var(--tilt, 0deg));
+  transition: transform 180ms ease, box-shadow 180ms ease;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.cardIcon {
+  font-size: 2rem;
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 8px 18px rgba(29, 32, 48, 0.06);
+}
+
+.card:link,
+.card:visited {
+  text-decoration: none;
+}
+
+.cardTitle {
+  margin: 0;
+  font-size: 1.15rem;
+  color: #1d2030;
+}
+
+.cardText {
+  margin: 0;
+  color: #64697b;
+  line-height: 1.4;
+}
+
+.cardButton {
+  margin-top: auto;
+  width: 100%;
+  border: 0;
+  border-radius: 14px;
+  padding: 0.75rem 1rem;
+  background: linear-gradient(90deg, #ff7b55 0%, #ff6e9d 100%);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 160ms ease, box-shadow 160ms ease, filter 160ms ease;
+  box-shadow: 0 12px 20px rgba(255, 111, 141, 0.28);
+}
+
+.card:hover {
+  transform: translateY(-3px) rotate(0deg);
+  box-shadow: 0 24px 44px rgba(28, 31, 49, 0.12);
+}
+
+.cardButton:hover {
+  transform: translateY(-1px);
+}

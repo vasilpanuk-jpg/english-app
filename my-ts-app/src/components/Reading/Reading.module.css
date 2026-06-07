@@ -1,0 +1,11 @@
+.reading {
+  padding: 1.5rem;
+  background: linear-gradient(180deg, #f8fff5 0%, #f6fff9 100%);
+  min-height: 100vh;
+}
+
+.title {
+  margin: 0 0 0.5rem;
+  font-size: 2rem;
+  color: #1d2030;
+}

@@ -1,0 +1,249 @@
+.home {
+  min-height: 100vh;
+  padding: 2rem;
+  background:
+    radial-gradient(circle at top left, rgba(255, 123, 85, 0.28), transparent 54%),
+    radial-gradient(circle at top right, rgba(255, 110, 157, 0.24), transparent 48%),
+    radial-gradient(circle at 20% 80%, rgba(99, 179, 237, 0.18), transparent 32%),
+    linear-gradient(180deg, #fffaf6 0%, #f6f8ff 100%);
+}
+
+.hero {
+  max-width: 720px;
+  margin-bottom: 2rem;
+  padding: 1.2rem 1.2rem 0;
+}
+
+/* Position header relative so we can absolutely position auth buttons */
+.hero {
+  position: relative;
+}
+
+.main_text_container {
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+}
+
+.main_text_content {
+  width: 80%;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.authButtons {
+  display: flex;
+  gap: 1rem;
+}
+
+.heroActions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1.25rem;
+}
+
+.signIn {
+  border: 0;
+  border-radius: 12px;
+  padding: 0.5rem 0.9rem;
+  background: linear-gradient(90deg, #e59646, #ed3a85);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.signUp {
+  border: 1px solid rgba(29,32,48,0.08);
+  border-radius: 12px;
+  padding: 0.5rem 0.9rem;
+  background: #fff;
+  color: #1d2030;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.logoutButton {
+  border: 0;
+  border-radius: 12px;
+  padding: 0.6rem 1rem;
+  background: linear-gradient(90deg, #ef4444, #fb7185);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 12px 20px rgba(239, 68, 68, 0.22);
+}
+
+.secondaryButton {
+  border: 1px solid rgba(29,32,48,0.08);
+  border-radius: 12px;
+  padding: 0.6rem 1rem;
+  background: #fff;
+  color: #1d2030;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.kicker {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 0 0.75rem;
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 2px solid rgba(255, 123, 85, 0.18);
+  color: #ef6b4c;
+  font-size: 0.78rem;
+  font-weight: 700;
+  box-shadow: 0 10px 24px rgba(255, 123, 85, 0.12);
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(2.75rem, 7vw, 5rem);
+  line-height: 0.92;
+  color: #1d2030;
+  letter-spacing: -0.02em;
+}
+
+.description {
+  max-width: 56ch;
+  margin: 1rem 0 0;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: #5d6073;
+}
+
+.modulesSection {
+  margin-top: 1.5rem;
+  padding: 0 1rem 1rem;
+}
+
+.sectionTitle {
+  margin: 0 0 1rem;
+  font-size: 1.35rem;
+  color: #1d2030;
+}
+
+
+.grid {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.1rem;
+  border: 2px solid rgba(29, 32, 48, 0.08);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 18px 40px rgba(28, 31, 49, 0.09);
+  backdrop-filter: blur(10px);
+  transform: rotate(var(--tilt, 0deg));
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.cardIcon {
+  font-size: 2.1rem;
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 8px 18px rgba(29, 32, 48, 0.06);
+}
+
+.card:nth-child(3n + 1) {
+  --tilt: -1deg;
+}
+
+.card:nth-child(3n + 2) {
+  --tilt: 1deg;
+}
+
+.cardTitle {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #1d2030;
+}
+
+.cardText {
+  margin: 0;
+  color: #64697b;
+  line-height: 1.5;
+}
+
+.cardButton {
+  margin-top: auto;
+  width: 100%;
+  border: 0;
+  border-radius: 16px;
+  padding: 0.8rem 1rem;
+  background: linear-gradient(90deg, #ff7b55 0%, #ff6e9d 100%);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 160ms ease, box-shadow 160ms ease, filter 160ms ease;
+  box-shadow: 0 12px 20px rgba(255, 111, 141, 0.28);
+}
+
+.card:hover {
+  transform: translateY(-3px) rotate(0deg);
+  box-shadow: 0 24px 44px rgba(28, 31, 49, 0.12);
+}
+
+.cardButton:hover {
+  transform: translateY(-1px);
+  filter: saturate(1.08);
+}
+
+.cardButton:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 640px) {
+  .home {
+    padding: 1.25rem;
+  }
+
+  .hero,
+  .modulesSection {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  /* Place items 5-7 into columns 2-4 so the second row appears centered under the four-up row */
+  .grid > :nth-child(5) { grid-column: 2; justify-self: center; }
+  .grid > :nth-child(6) { grid-column: 3; justify-self: center; }
+  .grid > :nth-child(7) { grid-column: 4; justify-self: center; }
+
+  .card {
+    width: 100%;
+    max-width: 320px;
+  }
+}
