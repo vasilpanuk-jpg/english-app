@@ -6,10 +6,6 @@ type Topic = {
   explanation?: string
   rules?: string[]
   examples?: string[]
-  formation?: string[]
-  usage?: string[]
-  commonMistakes?: string[]
-  notes?: string[]
 }
 
 type LevelData = {
@@ -569,46 +565,6 @@ export default function Grammar() {
               <ul className={styles.topicItems}>
                 {topicObj.rules.map((r) => (
                   <li key={r}>{r}</li>
-                ))}
-              </ul>
-            </>
-          )}
-          {topicObj.formation && topicObj.formation.length > 0 && (
-            <>
-              <h3 className={styles.subTitle}>Formation</h3>
-              <ul className={styles.topicItems}>
-                {topicObj.formation.map((f) => (
-                  <li key={f}>{f}</li>
-                ))}
-              </ul>
-            </>
-          )}
-          {topicObj.usage && topicObj.usage.length > 0 && (
-            <>
-              <h3 className={styles.subTitle}>Usage</h3>
-              <ul className={styles.topicItems}>
-                {topicObj.usage.map((u) => (
-                  <li key={u}>{u}</li>
-                ))}
-              </ul>
-            </>
-          )}
-          {topicObj.rules && topicObj.rules.length > 0 && (
-            <>
-              <h3 className={styles.subTitle}>Rules</h3>
-              <ul className={styles.topicItems}>
-                {topicObj.rules.map((r) => (
-                  <li key={r}>{r}</li>
-                ))}
-              </ul>
-            </>
-          )}
-          {topicObj.commonMistakes && topicObj.commonMistakes.length > 0 && (
-            <>
-              <h3 className={styles.subTitle}>Common Mistakes</h3>
-              <ul className={styles.examplesList}>
-                {topicObj.commonMistakes.map((m) => (
-                  <li key={m}>{m}</li>
                 ))}
               </ul>
             </>
