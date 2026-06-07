@@ -1,0 +1,49 @@
+spring:
+  application:
+    name: english-app
+
+  data:
+    redis:
+      port: ${REDIS_PORT:6379}
+      host: ${REDIS_HOST:localhost}
+
+
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/english-app}
+    username: ${SPRING_DATASOURCE_USERNAME:admin}
+    password: ${SPRING_DATASOURCE_PASSWORD:password}
+
+
+  #  MAIL
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ${EMAIL:easyenglish515253@gmail.com}
+    password: ${APP_PASSWORD:yrfk jncx irhr foqw}
+
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  web:
+    error:
+      include-stacktrace: never
+
+
+
+springdoc:
+  swagger-ui:
+    path: /api-docs.html
+  api-docs:
+    path: /api-docs
+
+
+jwt:
+  refresh-expiration: "#{1000 * 60 * 60 * 24 * 7 * 2}"
